@@ -21,8 +21,8 @@
             <td><?= Html::encode($page['title']) ?></td>
             <td><?= Html::encode($page['content']) ?></td>
             <td>
-              <button class="btn btn-primary badge-pill" style="width:110px;"><?= Html::a('Подробнее',[ '/page/' . $page['title']],['class' => 'text-white'])?></button>
-              <button class="btn btn-danger badge-pill" style="width:140px;"><?= Html::a('Редактировать', ['/page/index?action=delete&idDelete='.$page['id']],['class' => 'text-white'])?></button>
+              <button class="btn btn-primary badge-pill" style="width:110px;"><?= Html::a('Open',[ '/page/' . $page['title']],['class' => 'text-white'])?></button>
+              <button class="btn btn-danger badge-pill" style="width:140px;"><?= Html::a('Delete', ['/page/index?action=delete&idDelete='.$page['id']],['class' => 'text-white'])?></button>
             </td>
           </tr>
         </tbody>
